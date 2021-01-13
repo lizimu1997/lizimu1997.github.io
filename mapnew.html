@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>new map</title>
+  <!-- Resources -->
+  <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script type="text/javascript" src="http://www.amcharts.com/lib/ammap.js"></script>
+    <script type="text/javascript" src="http://www.amcharts.com/lib/ammap_amcharts_extension.js"></script>
+  <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/black.js"></script>
+  <script type="text/javascript" src="http://www.amcharts.com/lib/maps/js/chinaHigh.js"></script>
+
+
+
+  <!-- Chart code -->
+<script>
+
+AmCharts.makeChart("chartdiv", {
+        "type": "map",
+        "theme": "dark",
+        "dataProvider" : {
+          "mapURL": "https://github.com/lizimu1997/test/raw/main/chinaHigh.svg",
+          "getAreasFromMap": true
+        },
+        "areasSettings": {
+          "autoZoom": true,
+          "selectedColor": "#CC0000"
+        }
+      });
+</script>
+</head>
+<body>
+<div id="chartdiv" style="width: 100%; height: 400px; background-color: #222222;">
+</div>
+</body>
+</html>
