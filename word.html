@@ -1,0 +1,457 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Chinese Highway.CSQ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+	<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+	<script src="https://cdn.amcharts.com/lib/4/plugins/wordCloud.js"></script>
+	<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+
+	<!-- Chart code -->
+	<script>
+	am4core.ready(function() {
+
+	// Themes begin
+	am4core.useTheme(am4themes_animated);
+	// Themes end
+
+	var chart = am4core.create("chartdiv", am4plugins_wordCloud.WordCloud);
+	chart.fontFamily = "Microsoft YaHei";
+	var series = chart.series.push(new am4plugins_wordCloud.WordCloudSeries());
+	series.randomness = 0.1;
+	series.rotationThreshold = 0.5;
+
+	series.data = [ {
+	    "tag": "clean",
+	    "count": "1765836"
+	}, {
+	    "tag": "comfortable",
+	    "count": "1287629"
+	}, {
+	    "tag": "cheap",
+	    "count": "1116769"
+	}, {
+	    "tag": "safe",
+	    "count": "805679"
+	}, {
+	    "tag": "convenient",
+	    "count": "606051"
+	}, {
+	    "tag": "well equipped",
+	    "count": "574684"
+	}, {
+	    "tag": "privacy",
+	    "count": "550916"
+	}, {
+	    "tag": "quiet",
+	    "count": "343092"
+	}, {
+	    "tag": "bathroom",
+	    "count": "296963"
+	}, {
+	    "tag": "suitable temperature",
+	    "count": "590000"
+	}, {
+	    "tag": "toilet",
+	    "count": "574684"
+	}, {
+	    "tag": "cooking",
+	    "count": "550916"
+	}, {
+	    "tag": "air conditioning",
+	    "count": "679892"
+	}, {
+	    "tag": "short time",
+	    "count": "343092"
+	}, {
+	    "tag": "comfortable bed",
+	    "count": "303311"
+	}, {
+	    "tag": "free electricity",
+	    "count": "296963"
+	}, {
+	    "tag": "free internet",
+	    "count": "388445"
+	}, {
+	    "tag": "multiple choices",
+	    "count": "286823"
+	}, {
+	    "tag": "traffic information",
+	    "count": "280079"
+	}, {
+	    "tag": "tourist season",
+	    "count": "277144"
+	}, {
+	    "tag": "short distance",
+	    "count": "263451"
+	}, {
+	    "tag": "consumption",
+	    "count": "257159"
+	}, {
+	    "tag": "close range",
+	    "count": "255661"
+	}, {
+	    "tag": "effectivenes",
+	    "count": "253824"
+	}, {
+	    "tag": "charger",
+	    "count": "222387"
+	}, {
+	    "tag": "lounge",
+	    "count": "219827"
+	}, {
+	    "tag": "kitchen",
+	    "count": "203121"
+	}, {
+	    "tag": "convenience store",
+	    "count": "202547"
+	}, {
+	    "tag": "hot water",
+	    "count": "196727"
+	}, {
+	    "tag": "disposable toothbrush",
+	    "count": "191174"
+	}, {
+	    "tag": "specification",
+	    "count": "188787"
+	}, {
+	    "tag": "economical",
+	    "count": "180742"
+	}, {
+	    "tag": "long driving",
+	    "count": "178291"
+	}, {
+	    "tag": "low cost",
+	    "count": "173278"
+	}, {
+	    "tag": "night demand",
+	    "count": "154447"
+	}, {
+	    "tag": "chill",
+	    "count": "153581"
+	}, {
+	    "tag": "food",
+	    "count": "247538"
+	}, {
+	    "tag": "tidy",
+	    "count": "147456"
+	}, {
+	    "tag": "rest place",
+	    "count": "145801"
+	}, {
+	    "tag": "warm",
+	    "count": "145685"
+	}, {
+	    "tag": "willing",
+	    "count": "139940"
+	}, {
+	    "tag": "short stay",
+	    "count": "136649"
+	}, {
+	    "tag": "quality",
+	    "count": "130591"
+	}, {
+	    "tag": "needs",
+	    "count": "127680"
+	}, {
+	    "tag": "time",
+	    "count": "125021"
+	}, {
+	    "tag": "park",
+	    "count": "129559"
+	}, {
+	    "tag": "truck driver",
+	    "count": "118810"
+	}, {
+	    "tag": "Long-distance transport",
+	    "count": "113719"
+	},  {
+	    "tag": "web-services",
+	    "count": "98916"
+	} ];
+
+	series.dataFields.word = "tag";
+	series.dataFields.value = "count";
+
+	series.heatRules.push({
+	 "target": series.labels.template,
+	 "property": "fill",
+	 "min": am4core.color("#0000CC"),
+	 "max": am4core.color("#CC00CC"),
+	 "dataField": "value"
+	});
+
+	series.labels.template.url = "https://stackoverflow.com/questions/tagged/{word}";
+	series.labels.template.urlTarget = "_blank";
+	series.labels.template.tooltipText = "{word}: {value}";
+
+	var hoverState = series.labels.template.states.create("hover");
+	hoverState.properties.fill = am4core.color("#FF0000");
+
+	var subtitle = chart.titles.create();
+
+
+	var title = chart.titles.create();
+
+	title.fontSize = 20;
+	title.fontWeight = "800";
+
+	}); // end am4core.ready()
+	</script>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/syspla/jquery-plugin-svg2img@1.0/svg2img.js" charset="utf-8"></script>
+
+
+
+	</head>
+	<body>
+
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2 text-left">
+					<div id="fh5co-logo"><a href="index.html">DATA<span>VIS.</span></a></div>
+				</div>
+				<div class="col-xs-10 text-right menu-1">
+
+					<ul>
+
+						<li class="active"><a href="index.html">HOME</a></li>
+						<li class="has-dropdown"><a href="pie.html">SQ</a></li>
+						<li><a href="map.html">SA</a></li>
+						<li><a href="word.html">CSQ</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/封面渐变3.jpg);" data-stellar-background-ratio="1.0">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 text-left">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeInUp">
+							<h1 class="mb30"><b>SURVEY OF USERS & STAFFS IN THE SERVICE AREA</b></h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+
+
+	<div id="fh5co-testimonial" class="fh5co-bg-section">
+		<div class="container">
+			<div class="row animate-box row-pb-md">
+				<div class="col-md-8 col-md-offset-2 text-left fh5co-heading">
+
+					<h2>Survey of users and staffs </h2></br></br>
+					<p>We interviewed practitioners and service personnel in several service areas. They were asked about the current problems and their expectations for the service area.The result reflects a series of deficiencies and potential development trends in the existing service areas.</br></br></br>
+					At the same time, these interviews were organized into word clouds. In order to see their needs more intuitively.</p></br></br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 animate-box">
+					<div class="testimonial">
+						<blockquote>
+							</br><p>&ldquo;Carrying out long-distance cargo transportation across the country, and having to return to the truck to rest after eating at the high-speed service station. Put a simple bed behind the truck. Sometimes only eat instant noodles in the car to save money and time..&rdquo;</p></br>
+							<p class="author"> <img src="images/卡车.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite>&mdash; Truck driver</cite></p>
+						</blockquote>
+					</div>
+
+					<div class="testimonial fh5co-selected">
+						<blockquote>
+							</br><p>&ldquo;Don’t have long driving experience, so always need to go to the service area to rest. If there is a quiet, hygienic and convenient rest room,hope to use it. Hope to have a comfortable and enjoyable process when go out to work or travel.&rdquo;</p></br>
+							<p class="author"><img src="images/轿车.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite>&mdash; Car driver</cite></p>
+						</blockquote>
+					</div>
+				</div>
+
+				<div class="col-md-6 animate-box">
+					<div class="testimonial fh5co-selected">
+						<blockquote>
+							</br><p>&ldquo;Generally work at night to manage the safety of the parking lot and its surroundings. There are frequent thefts from late night to morning, which is very hard work.&rdquo;</p></br>
+							<p class="author"><img src="images/警察.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite>&mdash; Security</cite></p>
+						</blockquote>
+					</div>
+
+					<div class="testimonial">
+						<blockquote>
+							</br><p>&ldquo;Convenience stores are open from 7:00 in the morning to 10:00 at night, and there is a lot of traffic on holidays and weekends. Although a driver’s lounge was set up, it was transformed into a storage room. Usually rest in his car.&rdquo;</p></br>
+							<p class="author"><img src="images/店员.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"> <cite>&mdash; Clerk</cite></p>
+						</blockquote>
+					</div>
+
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+<div id="chartdiv" style="width: 100%; height: 550px; background-color: # ;" ></div>
+
+
+<div id="fh5co-team">
+	<div class="container">
+		<div class="row animate-box row-pb-md">
+			<div class="col-md-8 col-md-offset-2 text-left fh5co-heading">
+
+			</br><h2>Summary & Goals</h2></br></br>
+				<p>It can be seen from the above data that China’s highway construction is developing very rapidly, but at the same time there are still some shortcomings. At the same time, users also put forward different expectations and requirements.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
+				<div class="fh5co-staff">
+					<img src="images/国家政府.jpg" alt="Free HTML5 Templates by gettemplates.co">
+					<h3>Government Construction</h3>
+					<strong class="role">PAST</strong>
+					<p>The Chinese government has completed the design and development of China's highways in nearly 40 years. The infrastructure is already very complete, but the supporting facilities need to be improved.</p>
+
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
+				<div class="fh5co-staff">
+					<img src="images/投资经济.jpg" alt="Free HTML5 Templates by gettemplates.co">
+					<h3>Investment</h3>
+					<strong class="role">NOW</strong>
+					<p>It is hoped that these data can be used to explain to investors the current development of China's highways, attract investors to invest, and further strengthen the construction of China's highways.</p>
+
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
+				<div class="fh5co-staff">
+					<img src="images/旅程地图.jpg" alt="Free HTML5 Templates by gettemplates.co">
+					<h3>Service Design</h3>
+					<strong class="role">FUTURE</strong>
+					<p>Not only builders and investors, we, as designers, can also propose related design solutions for China's expressways from different angles and aspects, such as logo design or service design and so on.</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+	<div id="fh5co-started">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<span>Chiba University</span>
+
+					<h2>Data Visualization<br>2020.10-2021.2</h2>
+					<p>Special thanks:Chacon Quintero Juan Carlos & People who helped me</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy;Data source: National Bureau of Statistics of China </small>
+
+					</p>
+
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
